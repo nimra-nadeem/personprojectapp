@@ -1,0 +1,117 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+-webkit-tap-highlight-color:transparent;
+
+	
+html,
+body{
+    width: 100% !important;
+    min-height: 0px !important;
+    min-width: 0px;
+}
+
+html{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.container{
+    margin: 0px;
+    max-width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: auto;
+}
+.btn-group-xs > .btn, .btn-xs {
+   padding : .5rem .75rem;
+   font-size : .875rem;
+   line-height : .5;
+   border-radius : .2 rem;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  /*padding-bottom: 100%;*/
+  vertical-align: top;
+  overflow: hidden;
+}
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.btn{white-space: normal !important;}
+
+.btn-primary, .btn-primary.active {background-color: rgba(255,255,255,1) !important;
+	border-color: rgba(51,51,255,1) !important;
+	color: rgba(51,51,255,1) !important;
+	outline: none !important;
+
+}
+
+.btn-primary:focus, .btn-primary:active {background-color: rgba(51,51,255,1) !important;
+	color: rgba(255,255,255,1) !important;
+}
+
+.btn-primary:hover {background-color: rgba(51,51,255,1);
+	color: rgba(255,255,255,1);
+}
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+}
+.jumbotron { 
+  min-height: 510px;
+}
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #3863FF; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #3863FF; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
